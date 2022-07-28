@@ -17,10 +17,14 @@ security:
         main:
             lazy: true
             provider: app_user_provider
-        secured_area:
             form_login:
                 enable_csrf: true
-                default_target_path: app_localizacion
+                login_path: app_login
+                check_path: app_login
+            logout:
+                path:   /logout
+                target: /
+
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall

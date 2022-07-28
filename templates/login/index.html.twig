@@ -23,7 +23,7 @@
                         account.</p>
 
 
-                    <form method="post"  action="{{ path('app_login') }}">
+                    <form method="post" action="{{ path('app_login') }}">
                         {% if error %}
                             <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
                         {% endif %}
@@ -31,8 +31,8 @@
 
                         <div class="form-group">
                             <label for="username">Email</label>
-                            <input id="username" type="email" class="form-control"  name="_username" tabindex="1" required
-                                   autofocus  value="{{ last_username }}">
+                            <input id="username" type="email" class="form-control" name="_username" tabindex="1"
+                                   value="{{ last_username }}">
                             <div class="invalid-feedback">
                                 Please fill in your email
                             </div>
@@ -42,8 +42,8 @@
                             <div class="d-block">
                                 <label for="password" class="control-label">Password</label>
                             </div>
-                            <input id="password" type="password" class="form-control" name="_password" tabindex="2"
-                                   required>
+                            <input id="password" type="password" class="form-control" name="_password" tabindex="2">
+
                             <div class="invalid-feedback">
                                 please fill in your password
                             </div>
